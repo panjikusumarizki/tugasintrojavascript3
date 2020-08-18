@@ -14,7 +14,7 @@ const cekGanjilGenap = (angka) => {
     })
 }
 
-cekGanjilGenap('1').then((response) => {
+cekGanjilGenap(1).then((response) => {
     console.log(response)
 }).catch((error) => {
     console.log(error.message)

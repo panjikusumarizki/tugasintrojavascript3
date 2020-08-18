@@ -2,8 +2,8 @@ const tambah = (nama) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             let buah = ['anggur','pisang','jeruk','mangga']
-            buah.push(nama)
             if (typeof(nama) === 'string'){
+                buah.push(nama)
                 resolve(buah)
             } else {
                 reject(new Error('Input harus string !'))

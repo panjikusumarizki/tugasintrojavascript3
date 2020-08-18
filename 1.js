@@ -14,12 +14,12 @@ const cekHariKerja = (day) => {
     })
 }
 
-// cekHariKerja('selasa').then(() => {
-//     console.log(`Hari ini hari kerja`)
-// })
-// .catch((error) => {
-//     console.log(error.message)
-// })
+cekHariKerja('sabtu').then((response) => {
+    console.log(`Hari ${response} hari kerja`)
+})
+.catch((error) => {
+    console.log(error.message)
+})
 /* then catch untuk menangani atau menghandle output dari promise diatas.
 jika fulfilled atau terpenuhi maka outputnya yang berada di then,
 jika rejected atau tidak terpenuhi maka outputnya yang berada di catch */
@@ -28,11 +28,11 @@ jika rejected atau tidak terpenuhi maka outputnya yang berada di catch */
 // const kerja = async (hari) => {
 //     try {
 //         await cekHariKerja(hari)
-//         console.log('Hari ini adalah hari kerja')
+//         console.log('Hari ini hari kerja')
 //     } catch (error) {
 //         console.log(error.message)
 //     }
 // }
 
-// kerja('rabu')
+// kerja('minggu')
 /* try catch untuk menangani proses asynchronous dari promise diatas.*/
